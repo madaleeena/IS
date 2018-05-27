@@ -10,27 +10,27 @@
 
 <body>
 
-<form>
+<!--<form>
     ORCID:<br>
     <input type="text" name="orcid" id="orcid">
     <br>
     <input type="submit" value="Submit" id="submit">
-</form>
+</form>-->
 
 <h1 >Publications</h1>
   <div id="myPublications"></div>
 
-<span></span>
 
 </body>
 
 <script>
-    $( "form" ).submit(function( event ) {
+    createORCIDProfile("0000-0003-4121-6169", "myPublications");
+    /*$( "form" ).submit(function( event ) {
         //value = $("#orcid").val();
-        //createORCIDProfile(value, "myPublications");
+        //
         $( "span" ).text( "Not valid!" ).show();
         event.preventDefault();
-    });
+    });*/
   //createORCIDFundingProfile("0000-0002-9563-0691", "myFunding");
 </script>
 
